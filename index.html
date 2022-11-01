@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <!-- 用一個container 包住兩個div(呢到跟咗用article當做div) 一個擺相 一個裝文字簡介 -->
+    <div class="container">
+      <article>
+        <picture>
+          <source
+            media="(min-width:640px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img src="./images/image-product-mobile.jpg" alt="" />
+        </picture>
+      </article>
+
+      <article>
+        <h2>perfume</h2>
+
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <ul>
+          <li class="price">$149.99</li>
+          <li><s>$169.99</s></li>
+        </ul>
+
+        <!-- <s> tag 用嚟標示唔啱嘅文本，用刪除線顯示 -->
+
+        <button class="btn">
+          <img src="./images/icon-cart.svg" alt="" /> Add to Cart
+        </button>
+      </article>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Adela</a>.
+    </div>
+  </body>
+</html>
